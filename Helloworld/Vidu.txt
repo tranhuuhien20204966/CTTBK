@@ -1,0 +1,10 @@
+.PHONY: all client server
+
+all: client server
+
+client:
+    $(MAKE) -C UDP_Client
+
+server:
+    $(MAKE) -C UDP_Server
+        
